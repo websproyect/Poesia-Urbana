@@ -1,0 +1,1107 @@
+<doctype html>
+
+<html>
+	
+<head>
+		
+<title> Home - NGO </title>
+		
+<meta charset="utf-8" />
+		
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+		
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans|Ubuntu|Damion|Audiowide">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!--meta http-equiv="refresh" content="2"-->
+	
+
+<style>	html		 
+	{ 
+		background: lightgrey; 
+		height: 100%;
+		width: 100%;
+		margin: 0;
+		overflow-x: hidden;
+	}
+	
+	body
+	{
+		height: auto;
+		width: 1200px;
+		max-width: 100%;
+		margin: 0 auto 0 auto;
+		font: normal 18px "PT Sans", "Trebuchet MS";
+		background: white;
+		overflow-x: hidden;
+	}
+	
+	*	 { box-sizing: border-box; }
+	
+	.row::after 
+	{
+		content:"";
+		clear:both;
+		display:table;
+	}
+	
+	.row-sub-div
+	{
+		width: 100%;
+		height: auto;
+	}
+	
+	[class*="col-"]	 { float:left; //border: 1px solid blue;}
+	
+	#page-container	 
+	{ 
+		width: 100%;		//display: none;
+		height: auto;
+		top: 0;
+		left: 0;
+		position: relative;absolute; 
+		background: white;
+		z-index: 4;
+		box-shadow: -6px 0 8px rgba(100, 100, 100, 0.7), 6px 0 8px rgba(100, 100, 100, 0.7);
+	}
+	
+	h1, h2, h3, h4, h5, h6
+	{
+		padding: 0;
+		margin: 0;
+		line-height: 110%;
+	}
+	
+
+	.page-logo
+	{
+		font: bolder 170% Audiowide, "Trebuchet MS";
+		margin: 0;
+		display: block;
+		height: 49%;
+		padding: 3.5px 0 0 0;
+		letter-spacing: 6px; 
+		color: #d00;
+		text-shadow: -0.9px 0 0.8px white, 0.9px 0 0.8px white, 
+			0 -0.9px 0.8px white, 0 0.9px 0.8px white;
+	}
+
+	.logo-rider
+	{
+		font: bold 85% "Audiowide";
+		float: left;
+		letter-spacing: 2px;
+		color: white;
+	}
+
+/* Nav-bar - START */
+	nav
+	{
+		height: 44px; 
+		width: 100%;
+	}
+
+	nav>.row-sub-div
+	{
+		height: 44px;
+		width: 100%;
+		max-width: 1200px;		
+		top: 0;
+		right: 0;		
+		left: 0;
+		z-index: 6;
+	}
+
+	#desktop-nav-links
+	{
+		margin: 0;
+		padding: 0 15px;
+		float: left;
+		width: 100%;
+		overflow: hidden;
+		background: rgba(0, 0, 0, 0.85);
+		font-family: "Trebuchet MS";
+		box-shadow: 0 4px 3px rgba(40, 40, 40, 0.5);
+	}
+
+	#desktop-nav-links>li 
+	{
+		list-style-type: none;
+		display: inline-block;
+		margin: 0;
+		float: left;
+	}
+
+	#desktop-nav-links>li>a
+	{
+		display: inline-block;
+		padding: 13px 18px;
+		font-size: 80%;
+		text-decoration: none;
+		color: #767676;
+		-webkit-transition: 0.5s;
+		-moz-transition: 0.5s;
+		-ms-transition: 0.5s;
+		-o-transition: 0.5s;
+		transition: 0.5s;
+	}
+
+	#desktop-nav-links>li>a:hover		 { color: gainsboro; }
+
+	#desktop-nav-links>.donate
+	{
+		float: right;
+		margin: 0 15px 0 0;
+		border: 3px solid white;
+		border-top: none;
+		border-bottom: none;
+		display: none;
+		background: rgb(43, 130, 81);
+		-webkit-transform: skew(-10deg);
+		-moz-transform: skew(-10deg);
+		-ms-transform: skew(-10deg);
+		-o-transform: skew(-10deg);
+		transform: skew(-10deg);
+		-webkit-transition: 0.4s;
+		-moz-transition: 0.4s;
+		-ms-transition: 0.4s;
+		-o-transition: 0.4s;
+		transition: 0.4s;
+
+	}
+
+	.donate>#donate
+	{
+		color: white;
+		height: 44px;
+		font-size: 95%;
+		font-family: "PT Sans";
+		padding-top: 10px;
+		-webkit-transform: skew(10deg);
+		-moz-transform: skew(10deg);
+		-ms-transform: skew(10deg);
+		-o-transform: skew(10deg);
+		transform: skew(10deg);
+
+	}
+
+	#desktop-nav-links>.donate:hover	 { background: #007a00; }
+
+	a
+	{
+		text-decoration: none;
+		color: royalblue;
+	}
+
+	#desktop-nav-links>.mobile-nav-button-container
+	{
+		float: ;right;
+		margin: 0;
+		top: 0; position: fixed;
+		right: 0;
+		height: 52px; 
+		z-index: 6;
+	}
+
+	#mobile-nav-button
+	{
+		height: 55px;
+		width: 55px;
+		margin: auto;
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 7; 
+		padding: 8px 11px;
+		border-left: 1px solid rgba(0, 0, 0, 0.2);
+		
+	}
+
+	.mobile-nav-button-stroke
+	{
+		width: 31px;
+		height: 3px;
+		margin: 7.5px 0;
+		background: white;
+		border-radius: 15px;
+		-webkit-transition: 0.4s;
+		-moz-transition: 0.4s;
+		-ms-transition: 0.4s;
+		-o-transition: 0.4s;
+		transition: 0.4s;
+	}
+
+	#mobile-nav-button:hover .mobile-nav-button-stroke
+	{
+		background: white;
+	}
+
+	#desktop-nav-links>.mobile-nav-search-container
+	{
+		float: right !important;
+		padding: 11px 5px;
+		display: none;
+	}
+/* Nav-bar - END */
+
+/* Mobile side nav bar - START */
+	#mobile-side-nav-menu
+	{
+		height: 100%;
+		width: 290px;
+		max-width: 82%;
+		position: fixed;
+		top: -100%;
+		left: 0;
+		padding: 10px 0 0 0;
+		background: black;
+		overflow-x: hidden;
+		z-index: 8;
+	}
+
+	#mobile-side-nav-menu ul 
+	{
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+	}
+
+#search-container
+{
+	text-align: right;
+	padding: 19px 0; 
+}
+
+.search
+{
+	padding: 2px 0 2px 12px;
+	height: 33px;
+	width: 200px;
+	color: darkgrey;
+	background: rgba(0, 0, 0, 0.5);
+	border: 1px solid #353535;
+	border-right: none;
+	border-radius: 22px 0 0 22px;
+	float: right; 
+	display: inline-block;
+	outline: none;
+}
+
+.search-button
+{
+	background: rgba(0, 0, 0, 0.5); /*#4961e1;*/
+	color: gainsboro;
+	height: 33px;
+	width: 35px; 
+	font-size: 100%;
+	border-radius: 0 22px 22px 0;
+	border: 1px solid #353535;
+	border-left: none;
+	padding-left: 4px;
+	float: right;
+	display: inline-block;
+	outline: none;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+
+.search-button:hover	{ background: #2740c0; }
+
+	#mobile-side-nav-search-container
+	{
+		height: 100px;
+		padding: 30px 10% 40px 10%;
+		text-align: center;
+		position: absolute;
+		top: 0;
+		display: block;
+		opacity: 0;
+	}
+
+	#mobile-side-nav-menu .search
+	{
+		max-width: 81%;
+		width: 200px;
+		background: rgb(0, 0, 0);
+	}
+
+	#mobile-side-nav-menu .search-button
+	{
+		max-width: 19%;
+		width: 50px;
+		color: white; 
+	}
+
+	li.mobile-side-nav-link-container		 { margin-left: -400px; }
+
+	li.mobile-side-nav-link-container:nth-child(2)		 { margin-top: 75px; }
+
+	a.mobile-side-nav-links
+	{
+		display: block;
+		padding: 15px 10%;
+		color: white;
+		font-size: 90%;
+		border: none;
+		text-align: center;
+		-webkit-transition: 0.4s ease-in;
+		-moz-transition: 0.4s ease-in;
+		-ms-transition: 0.4s ease-in;
+		-o-transition: 0.4s ease-in;
+		transition: 0.4s ease-in;
+	}
+
+	a.mobile-side-nav-links:hover	 { background: #222; }
+
+	a.mobile-side-nav-links:active	 { background: #ff4327; }
+
+	li.mobile-side-nav-link-container:last-child
+	{
+		text-align: center;
+		display: none;
+		margin-left: 0;
+	}
+
+	#mobile-side-nav-donate
+	{
+		background: rgba(43, 130, 81, 1);
+		color: white;
+		padding: 9px 15px;
+		border: 2px solid gainsboro;
+		border-radius: 4px;
+		font-size: 92%;
+		display: inline-block;
+		margin: 30px 0;
+		opacity: 0;
+		-webkit-transition: 0.35s;
+		-moz-transition: 0.35s;
+		-ms-transition: 0.35s;
+		-o-transition: 0.35s;
+		transition: 0.35s;
+	}
+
+	#mobile-side-nav-donate:hover	 { background: #007a00; }
+
+	#mobile-menu-transparent-bg
+	{
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.8);
+		z-index: 5;
+		display: none;
+	}
+
+/* Mobile side nav bar - END */
+
+
+/* Mobile Responsive WD - START */
+
+	/* Min-width: 881px; */
+	@media only screen and (min-width: 881px)
+	{
+		#desktop-nav-links [class*="mobile-"], #mobile-side-nav-menu	 { display: none; }
+		
+		#desktop-nav-links .donate	 { display: block; }
+
+		.col-1		 { width: 8.33%; }
+		.col-2		 { width: 16.66%; }
+		.col-3		 { width: 25%; }
+		.col-4		 { width: 33.33%; }
+		.col-5		 { width: 41.66%; }
+		.col-6		 { width: 50%; }
+		.col-7		 { width: 58.33%; }
+		.col-8		 { width: 66.66%; }
+		.col-9		 { width: 75%; }
+		.col-10		{ width: 83.33%; }
+		.col-11		{ width: 91.66%; }
+		.col-12		{ width: 100%; }
+	}
+
+	/* Max-width: 670px */
+	@media only screen and (max-width: 670px)
+	{	
+		#page-container		 { box-shadow: none; }
+
+		nav	 { background: black; }
+	}
+
+	/* Min-width: 670px ... Landscape */
+	@media only screen and (max-width: 670px) and (orientation: landscape)
+	{
+		#desktop-nav-links .donate	 { display: inline-block;  }
+		
+		a#mobile-side-nav-donate		 { display: none; }
+	}
+
+	/* Max-width: 880px */
+	@media only screen and (max-width: 880px)
+	{
+		[class*="col-"]	 { width: 100%; }
+
+		nav	 { height: 55px; }
+		
+		ul#desktop-nav-links		
+		{ 
+			height: 100%; 
+			padding: 0; 
+		}
+		
+		ul#desktop-nav-links li		{ height: 100%; }
+		#desktop-nav-links li[class*="desktop-link-"]		 { display: none; }
+		
+		nav>.row-sub-div	 
+		{ 
+			height: 55px; 
+			position: fixed; 
+		}
+		
+		nav .logo-container		
+		{ 
+			height: 100%; 
+			padding: 2px 5px 7px 13px; 
+		}
+		
+		nav .mobile-nav-logo 
+		{ 
+			margin: 0; 
+			float: left;
+		}
+		
+		nav .page-logo		
+		{ 
+			font-size: 142%;
+			letter-spacing: 5px;
+			padding: 0; 
+		}
+		
+		nav .logo-rider		
+		{ 
+			font-size: 62%; 
+			letter-spacing: 2.95px;
+			color: lightgrey;
+		}
+		
+		nav .logo-rider, nav .page-logo		
+		{ 
+			padding: 0; 
+			height: 29px;
+		}
+
+		#desktop-nav-links>.donate
+		{
+			margin: 0px 70px 0 20px;
+			height: 100%;
+			background: rgb(43, 130, 81);
+		}
+		
+		.donate>#donate
+		{
+			height: 100%;
+			padding: 15px 15px;
+			border-radius: 10px;
+		}
+	}
+
+
+	/* Special cases */
+
+	/* Min-width: 740px ... Max-width: 880px */
+	@media only screen and (min-width: 740px) and (max-width: 880px)
+	{
+		#desktop-nav-links>.mobile-nav-search-container		{ display: block; }
+		
+		li.mobile-side-nav-search-container:last-child		 { display: none; }
+	}
+
+	/* Min-width: 500px ... Max-width: 739px */
+	@media only screen and (min-width: 501px) and (max-width: 739px)
+	{
+		#desktop-nav-links .donate	 { display: block; }
+		.links		{ width: 50%; }
+		li#mobile-side-nav-search-container { display: block; }
+		li.mobile-side-nav-link-container:last-child		 { display: none; }
+	}
+
+	/* Max-width: 880px */
+	@media only screen and (max-width: 880px)
+	{
+		ul#desktop-nav-links		 { height: 55px; }
+	}
+
+	/* Min-width: 671px ... Max-width: 880px */
+	@media only screen and (min-width: 671px) and (max-width: 880px)
+	{
+		#desktop-nav-links .donate	 { display: block; }
+	}
+
+	/* Max-width: 500px */
+	@media only screen and (max-width: 500px)
+	{
+		li.mobile-side-nav-link-container:last-child		 { display: block; }
+	}
+
+/* Mobile Responsive WD - END */
+
+/* Mobile nav button - START */
+  
+  /* Mobile nav button top stroke animation - START */
+
+  .rotate45deg
+  {
+	-webkit-transform-origin: 0 100%;
+	-moz-transform-origin: 0 100%;
+	-ms-transform-origin: 0 100%;
+	-o-transform-origin: 0 100%;
+	transform-origin: 0 100%;
+	-webkit-animation: rotateDown 0.5s forwards ease-out;
+	-moz-animation: rotateDown 0.5s forwards ease-out;
+	-ms-animation: rotateDown 0.5s forwards ease-out;
+	-o-animation: rotateDown 0.5s forwards ease-out;
+	animation: rotateDown 0.5s forwards ease-out;
+  }
+
+  @-webkit-keyframes rotateDown
+  {
+	from	{ -webkit-transform: rotate(0deg); } 
+	to	  { -webkit-transform: rotate(43deg); }
+  }
+
+  @-moz-keyframes rotateDown
+  {
+	from	{ -moz-transform: rotate(0deg); } 
+	to	  { -moz-transform: rotate(43deg); }
+  }
+
+  @-o-keyframes rotateDown
+  {
+	from	{ -o-transform: rotate(0deg); } 
+	to	  { -o-transform: rotate(43deg); }
+  }
+
+  @keyframes rotateDown
+  {
+	from	{ transform: rotate(0deg); } 
+	to	  { transform: rotate(43deg); }
+  }
+
+  .rotateBackUp
+  {
+	-webkit-transform-origin: 0 100%;
+	-moz-transform-origin: 0 100%;
+	-ms-transform-origin: 0 100%;
+	-o-transform-origin: 0 100%;
+	transform-origin: 100% 0;
+	-webkit-animation: rotateBackUp 0.5s forwards ease-out;
+	-moz-animation: rotateBackUp 0.5s forwards ease-out;
+	-ms-animation: rotateBackUp 0.5s forwards ease-out;
+	-o-animation: rotateBackUp 0.5s forwards ease-out;
+	animation: rotateBackUp 0.5s forwards ease-out;
+  }
+
+  @-webkit-keyframes rotateBackUp
+  {
+	from { 
+	  -webkit-transform: rotate(-45deg);
+	  -webkit-transform: translateY(0);
+	} 
+	to {
+	  -webkit-transform: rotate(0deg);
+	  -webkit-transform: translateY(21px);
+	}
+  }
+
+  @-moz-keyframes rotateBackUp
+  {
+	from { 
+	  -moz-transform: rotate(-45deg);
+	  -moz-transform: translateY(0);
+	} 
+	to {
+	  -moz-transform: rotate(0deg);
+	  -moz-transform: translateY(21px);
+	}
+  }
+
+  @-o-keyframes rotateBackUp
+  {
+	from { 
+	  -o-transform: rotate(-45deg);
+	  -o-transform: translateY(0);
+	} 
+	to {
+	  -o-transform: rotate(0deg);
+	  -o-transform: translateY(21px);
+	}
+  }
+
+  @keyframes rotateBackUp
+  {
+	from { 
+	  -ms-transform: rotate(-45deg);
+	  transform: rotate(-45deg);
+	  -ms-transform: translateY(0);
+	  transform: translateY(0);
+	} 
+	to {
+	  -ms-transform: rotate(0deg);
+	  transform: rotate(0deg);
+	  -ms-transform: translateY(21px);
+	  transform: translateY(21px);
+	}
+  }
+  /* Mobile nav button top stroke animation - END */
+  
+
+  /* Mobile nav button bottom stroke animation - START */
+
+  .rotate315deg
+  {
+	-webkit-transform-origin: 0 100%;
+	-moz-transform-origin: 0 100%;
+	-ms-transform-origin: 0 100%;
+	-o-transform-origin: 0 100%;
+	transform-origin: 0 100%;
+	-webkit-animation: rotateUp 0.5s forwards ease-out;
+	-moz-animation: rotateUp 0.5s forwards ease-out;
+	-ms-animation: rotateUp 0.5s forwards ease-out;
+	-o-animation: rotateUp 0.5s forwards ease-out;
+	animation: rotateUp 0.5s forwards ease-out;
+  }
+
+  @-webkit-keyframes rotateUp
+  {
+	from	{ -webkit-transform: rotate(0deg); } 
+	to	  { -webkit-transform: rotate(-41deg); }
+  }
+
+  @-moz-keyframes rotateUp
+  {
+	from	{ -moz-transform: rotate(0deg); } 
+	to	  { -moz-transform: rotate(-41deg); }
+  }
+
+  @-o-keyframes rotateUp
+  {
+	from	{ -o-transform: rotate(0deg); } 
+	to	  { -o-transform: rotate(-41deg); }
+  }
+
+  @keyframes rotateUp
+  {
+	from	{ 
+	  -ms-transform: rotate(0deg);
+	  transform: rotate(0deg);
+	} 
+	to	  { 
+	  -ms-transform: rotate(-41deg);
+	  transform: rotate(-41deg); 
+	}
+  }
+
+  .rotateBackDown
+  {
+	-webkit-transform-origin: 100% 0;
+	-moz-transform-origin: 100% 0;
+	-ms-transform-origin: 100% 0;
+	-o-transform-origin: 100% 0;
+	transform-origin: 100% 0;
+	-webkit-animation: rotateBackDown 0.5s forwards ease-out;
+	-moz-animation: rotateBackDown 0.5s forwards ease-out;
+	-ms-animation: rotateBackDown 0.5s forwards ease-out;
+	-o-animation: rotateBackDown 0.5s forwards ease-out;
+	animation: rotateBackDown 0.5s forwards ease-out;
+  }
+
+  @-webkit-keyframes rotateBackDown
+  {
+	from {
+	  -webkit-transform: rotate(-45deg);
+	  -webkit-transform: translateY(0);
+	} 
+	to {
+	  -webkit-transform: rotate(90deg);
+	  -webkit-transform: translateY(-21px);
+	}
+  }
+
+  @-moz-keyframes rotateBackDown
+  {
+	from {
+	  -moz-transform: rotate(-45deg);
+	  -moz-transform: translateY(0);
+	} 
+	to {
+	  -moz-transform: rotate(90deg);
+	  -moz-transform: translateY(-21px);
+	}
+  }
+
+  @-o-keyframes rotateBackDown
+  {
+	from {
+	  -o-transform: rotate(-45deg);
+	  -o-transform: translateY(0);
+	} 
+	to {
+	  -o-transform: rotate(90deg);
+	  -o-transform: translateY(-21px);
+	}
+  }
+
+  @keyframes rotateBackDown
+  {
+	from {
+	  -ms-transform: rotate(-45deg);
+	  transform: rotate(-45deg);
+	  -ms-transform: translateY(0);
+	  transform: translateY(0);
+	} 
+	to {
+	  -ms-transform: rotate(90deg);
+	  transform: rotate(90deg);
+	  -ms-transform: translateY(-21px);
+	  transform: translateY(-21px);
+	}
+  }
+  /* Mobile nav button bottom stroke animation - END */
+
+  /* Mobile nav button middle stroke animation - START */
+  .hideNavStroke
+  {
+	-webkit-animation: hideNavStroke 0.3s forwards ease-out;
+	-moz-animation: hideNavStroke 0.3s forwards ease-out;
+	-ms-animation: hideNavStroke 0.3s forwards ease-out;
+	-o-animation: hideNavStroke 0.3s forwards ease-out;
+	animation: hideNavStroke 0.3s forwards ease-out;
+  }
+
+  @-webkit-keyframes hideNavStroke 
+  {
+	from {
+	  opacity: 0.8;
+	  margin-left: 0;
+	}
+	to {
+	  opacity: 0;
+	  margin-left: -30px;
+	}
+  }
+
+  @-moz-keyframes hideNavStroke 
+  {
+	from {
+	  opacity: 0.8;
+	  margin-left: 0;
+	}
+	to {
+	  opacity: 0;
+	  margin-left: -30px;
+	}
+  }
+
+  @-o-keyframes hideNavStroke 
+  {
+	from {
+	  opacity: 0.8;
+	  margin-left: 0;
+	}
+	to {
+	  opacity: 0;
+	  margin-left: -30px;
+	}
+  }
+
+  @keyframes hideNavStroke 
+  {
+	from {
+	  opacity: 0.8;
+	  margin-left: 0;
+	}
+	to {
+	  opacity: 0;
+	  margin-left: -30px;
+	}
+  }
+
+  .showNavStroke
+  {
+	-webkit-animation: showNavStroke 0.7s forwards ease-out;
+	-moz-animation: showNavStroke 0.7s forwards ease-out;
+	-ms-animation: showNavStroke 0.7s forwards ease-out;
+	-o-animation: showNavStroke 0.7s forwards ease-out;
+	animation: showNavStroke 0.7s forwards ease-in-out;
+  }
+
+  @-webkit-keyframes showNavStroke 
+  {
+	0% {
+	  opacity: 0;
+	  margin-left: -30px;
+	}
+	35% { opacity: 0; }
+	100% {
+	  opacity: 1;
+	  margin-left: 0;
+	}
+  }
+
+  @-moz-keyframes showNavStroke 
+  {
+	0% {
+	  opacity: 0;
+	  margin-left: -30px;
+	}
+	35% { opacity: 0; }
+	100% {
+	  opacity: 1;
+	  margin-left: 0;
+	}
+  }
+
+  @-o-keyframes showNavStroke 
+  {
+	0% {
+	  opacity: 0;
+	  margin-left: -30px;
+	}
+	35% { opacity: 0; }
+	100% {
+	  opacity: 1;
+	  margin-left: 0;
+	}
+  }
+
+  @keyframes showNavStroke 
+  {
+	0% {
+	  opacity: 0;
+	  margin-left: -30px;
+	}
+	35% { opacity: 0; }
+	100% {
+	  opacity: 1;
+	  margin-left: 0;
+	}
+  }
+  /* Mobile nav button middle stroke animation - END */
+
+
+/* Mobile nav button - END */
+
+
+/* Desktop nav menu slide - START */
+  .slideDown
+  {
+	  -webkit-animation: slideDown 1.5s ease-out;
+	  -moz-animation: slideDown 1.5s ease-out;
+	  -ms-animation: slideDown 1.5s ease-out;
+	  -o-animation: slideDown 1.5s ease-out;
+	  animation: slideDown 1.5s ease-out;
+  }
+
+  @-webkit-keyframes slideDown {
+	0% {
+	  -webkit-transform: translateY(-200%);
+	  opacity: 0;
+	}
+	60% { opacity: 0.5; }
+	100% {
+	  -webkit-transform: translateY(0%);
+	  opacity: 1;
+	}
+  }
+  
+  @-moz-keyframes slideDown {
+	0% {
+	  -moz-transform: translateY(-200%);
+	  opacity: 0;
+	}
+	60% { opacity: 0.5; }
+	100% {
+	  -moz-transform: translateY(0%);
+	  opacity: 1;
+	}
+  }
+
+  @-o-keyframes slideDown {
+	0% {
+	  -o-transform: translateY(-200%);
+	  opacity: 0;
+	}
+	60% { opacity: 0.5; }
+	100% {
+	  -o-transform: translateY(0%);
+	  opacity: 1;
+	}
+  }
+
+  @keyframes slideDown {
+	0% {
+	  -ms-transform: translateY(-200%);
+	  transform: translateY(-200%);
+	  opacity: 0;
+	}
+	60% { opacity: 0.5; }
+	100% {
+	  -ms-transform: translateY(0%);
+	  transform: translateY(0%);
+	  opacity: 1;
+	}
+  }
+/* Desktop nav menu slide - END */
+
+
+			#my-name		 
+			{ 
+				padding: 15px 20px;
+				color: #656565;
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				text-align: center;
+				line-height: 160%;
+				width: 100%;
+				font-size: 80%;
+				background: black;
+			}
+
+			#my-name span
+			{ color: #aaa;
+			font: bold 160% "Trebuchet MS", "PT Sans"; }
+
+
+
+</style>
+
+</head>
+	
+
+
+
+<body>
+		<div id="page-container" class="row">
+			<div class="row-sub-div row">
+
+				<!-- Navigation Bar - START -->
+				<nav id="nav" class="row">
+					<div class="row-sub-div">
+						<ul id="desktop-nav-links">
+							<!-- Desktop Nav Links - START -->
+							<li class="desktop-link-home">
+								<a href="home.html" class="nav-links">HOME</a>
+							</li>
+							<li class="desktop-link-news">
+								<a href="#" class="nav-links">NEWS</a>
+							</li>
+							<li class="desktop-link-blog">
+								<a href="#" class="nav-links">BLOG</a>
+							</li>
+							<li class="desktop-link-events">
+								<a href="#" class="nav-links">EVENTS</a>
+							</li>
+							<li class="desktop-link-who">
+								<a href="#" class="nav-links">WHO WE ARE</a>
+							</li>
+							<li class="desktop-link-work">
+								<a href="#" class="nav-links">OUR WORK</a>
+							</li>
+							<li class="desktop-link-contact">
+								<a href="contact.html" class="nav-links">CONTACT US</a>
+							</li>
+							<!-- Desktop Nav Links - END -->
+							
+							<!-- Mobile Nav Links - START -->
+							<li class="mobile-nav-logo">
+								<div class="logo-container header-height col-6">
+									<a href="home.html" class="nav-links">
+										<h1 class="page-logo" >
+											CON<small>SUL</small> TAS<small>TIS</small>
+										</h1>
+										<span class="logo-rider">CONSULTAS </span>
+										</a>
+								</div>
+							</li>
+							<li class="mobile-nav-button-container">
+								<!-- Mobile nav button -->
+								<div id="mobile-nav-button">
+									<div id="mobile-nav-button-stroke1" class="mobile-nav-button-stroke"></div>
+									<div id="mobile-nav-button-stroke2" class="mobile-nav-button-stroke"></div>
+									<div id="mobile-nav-button-stroke3" class="mobile-nav-button-stroke"></div>
+								</div>
+							</li>
+							<li class="donate">
+								<!-- Mobile and desktop link (Donate Button) -->
+								<a href="#" id="donate" class="nav-links"><i class="fa fa-gift"></i> SALUD</a>
+							</li>
+							<li class="mobile-nav-search-container">
+								<!-- Mobile search box -->
+								<div class="col-12">
+									<button class="search-button"><i class="fa fa-search"></i> </button>
+									<input id="desktop-search" class="search" type="search" name="search" placeholder="Search Ijongo Life...">
+								</div>
+							</li>
+							<!-- Mobile Nav Links - END -->
+						</ul>
+					</div>
+					<div id="mobile-menu-transparent-bg" class="col-12"></div>
+				</nav>
+				<!-- Navigation Bar - END -->
+			</div>
+		</div>
+
+
+		<!-- Mobile side nav bar - START -->
+		<div id="mobile-side-nav-menu" class="row">
+			  <ul>
+				<li id="mobile-side-nav-search-container">
+					  <!-- Mobile search box -->
+					  <div class="col-12">
+						<button class="search-button"><i class="fa fa-search"></i> </button>
+						<input class="search" type="search" name="search" placeholder="Search ILCF...">
+					  </div>
+				</li>
+				<li class="mobile-side-nav-link-container">
+					  <a href="home.html" class="mobile-side-nav-links"><i class="fa fa-home"></i> Home </a>
+				</li>
+				<li class="mobile-side-nav-link-container">
+					  <a href="#" class="mobile-side-nav-links"><i class="fa fa-university"></i> News </a>
+				</li>
+				<li class="mobile-side-nav-link-container">
+					  <a href="#" class="mobile-side-nav-links"><i class="fa fa-laptop"></i> Events </a>
+				</li>
+				<li class="mobile-side-nav-link-container">
+					  <a href="#" class="mobile-side-nav-links"><i class="fa fa-th-large"></i> Who We Are</a>
+				</li>
+				<li class="mobile-side-nav-link-container">
+					  <a href="#" class="mobile-side-nav-links"><i class="fa fa-th-large"></i> Our Work</a>
+				</li>
+				<li class="mobile-side-nav-link-container">
+					  <a href="contact.html" class="mobile-side-nav-links"><i class="fa fa-th-large"></i> Contact </a>
+				</li>
+				<li class="mobile-side-nav-link-container">
+					<!-- Mobile and desktop link (Donate Button) -->
+					<a href="#" id="mobile-side-nav-donate"><i class="fa fa-gift"></i>  Donate </a>
+				</li>
+			</ul>
+		</div>
+		<!-- Mobile side nav bar - END -->
+		
+		<div id="my-name">
+			<span> N<small>AV</small> M<small>ENU</small> </span>		 <br />
+			by Sunday Power Inemesit		 <br /> 
+			&copy; 2017 
+		</div>
+	</body>
+</html>
+
+
+
+
+
+
+	
